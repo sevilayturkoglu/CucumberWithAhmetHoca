@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -33,7 +34,11 @@ public class AmazonPage {/*
  public WebElement ilkUrunIsimElementi;
 
 
-
+public WebElement istenenUrunElementi(int index){
+ String dinamikXpath= "(//span[@class='a-size-base-plus a-color-base a-text-normal'])["+index+"]";
+ WebElement istenenUrun=Driver.getDriver().findElement(By.xpath(dinamikXpath));
+ return istenenUrun;
+}
 
 
 }
