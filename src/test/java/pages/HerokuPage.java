@@ -2,13 +2,16 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import utilities.Driver;
 
-public class Herkupage {
-    public Herkupage(){
+public class HerokuPage {
+    public HerokuPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "//button[.='Add Element']")
+
+    @FindBy(xpath = "//*[.='Add Element']")
     public WebElement addElementButton;
 
-    @FindBy(xpath = "//button[@class='added-manually']")
-    public WebElement deleteButton;
-}
+    @FindBy(xpath = "//*[.='Delete']")
+    public WebElement deleteButton;}

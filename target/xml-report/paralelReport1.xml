@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="110.556" tests="8" skipped="0" failures="0" errors="0">
+<testcase classname="US1001 Kullanici Amazon syfasinda arama yapar" name="TC01 Kullanici Amazonda Nutella arar" time="22.716">
+<system-out><![CDATA[
+Given kullanici Amazon ana sayfasina gider..................................passed
+Then arama kutusuna Nutella yazar ve enter tusuna basar.....................passed
+And arama sonuclarinin Nutellla icerdigini test eder........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1001 Kullanici Amazon syfasinda arama yapar" name="TC02 kullanici Amazonda Java aratir" time="14.013">
+<system-out><![CDATA[
+Given kullanici Amazon ana sayfasina gider..................................passed
+When arama kutusuna Java yazar ve enter tusuna basar........................passed
+Then arama sonuclarinin Java icerdigini test eder...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1001 Kullanici Amazon syfasinda arama yapar" name="TC03 kullanici Amazonda Java aratir" time="12.044">
+<system-out><![CDATA[
+Given kullanici Amazon ana sayfasina gider..................................passed
+When arama kutusuna Apple yazar ve enter tusuna basar.......................passed
+Then arama sonuclarinin Apple icerdigini test eder..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 Kullanici amazonda urun aratip 2.urun detaylari test eder" name="TC09 Kullanici arama sonuclarinda istedigi urunu test edebilmeli" time="24.22">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfasina gider..............................passed
+When amazonda "Nutella" icin arama yapar....................................passed
+And 3 saniye bekler.........................................................passed
+And 2.urune gider...........................................................passed
+Then urun isminin "Nutella" icerdigini test eder............................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1007 Scenario outline coklu negatif login test" name="TC11 kullanici verilen listedeki kullanici isimlele giris yapamamali - Example #1.1" time="11.584">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfasina gider..................................passed
+Then cookies tiklar.........................................................passed
+Then ilk login linkine tiklar...............................................passed
+And username olarak examples dan "Hasan" girer..............................passed
+And password olarak examples dan"12344" girer...............................passed
+Then login butonuna basar...................................................passed
+Then giris yapilamadigini test eder.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1007 Scenario outline coklu negatif login test" name="TC11 kullanici verilen listedeki kullanici isimlele giris yapamamali - Example #1.2" time="10.48">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfasina gider..................................passed
+Then cookies tiklar.........................................................passed
+Then ilk login linkine tiklar...............................................passed
+And username olarak examples dan "Said" girer...............................passed
+And password olarak examples dan"645363" girer..............................passed
+Then login butonuna basar...................................................passed
+Then giris yapilamadigini test eder.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1007 Scenario outline coklu negatif login test" name="TC11 kullanici verilen listedeki kullanici isimlele giris yapamamali - Example #1.3" time="8.861">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfasina gider..................................passed
+Then cookies tiklar.........................................................passed
+Then ilk login linkine tiklar...............................................passed
+And username olarak examples dan "Eyup" girer...............................passed
+And password olarak examples dan"jskdbvk" girer.............................passed
+Then login butonuna basar...................................................passed
+Then giris yapilamadigini test eder.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1007 Scenario outline coklu negatif login test" name="TC11 kullanici verilen listedeki kullanici isimlele giris yapamamali - Example #1.4" time="6.164">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfasina gider..................................passed
+Then cookies tiklar.........................................................passed
+Then ilk login linkine tiklar...............................................passed
+And username olarak examples dan "Fidan" girer..............................passed
+And password olarak examples dan"ytefv86" girer.............................passed
+Then login butonuna basar...................................................passed
+Then giris yapilamadigini test eder.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

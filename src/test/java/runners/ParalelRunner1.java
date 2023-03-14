@@ -1,0 +1,20 @@
+package runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)//Junitten gelir
+@CucumberOptions(//Junitten gelir
+        plugin = {"html:target/paralelReport1.html",
+                "json:target/json-reports/paralelReport1.json",
+                "junit:target/xml-report/paralelReport1.xml"
+        },
+        features = "src/test/resources/features",
+        glue = "stepdefinitions",
+        tags = "@wip",
+        dryRun=false
+)
+public class ParalelRunner1 {
+        //paralel calistirma ici terminale  mvn clean verify yaziyoruz
+}

@@ -1,6 +1,6 @@
 Feature:US1005 Kullanici amazonda urun aratip 2.urun detaylari test eder
 
-  @ilk
+@wip
   Scenario: TC09 Kullanici arama sonuclarinda istedigi urunu test edebilmeli
 
     Given kullanici "amazonUrl" anasayfasina gider
@@ -8,4 +8,3 @@ Feature:US1005 Kullanici amazonda urun aratip 2.urun detaylari test eder
     And 3 saniye bekler
     And 2.urune gider
     Then urun isminin "Nutella" icerdigini test eder
-    And sayfayi kapatir

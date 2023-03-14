@@ -6,14 +6,21 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)//Junitten gelir
 @CucumberOptions(//Junitten gelir
+        plugin = {"html:target/cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"
+        },
         features = "src/test/resources/features",
         glue = "stepdefinitions",
         tags = "",
         dryRun=false
 
+
+
 )
 public class Runner {
     /*
+    Rapor almak istedigimiz zaman senaryolari Runnerdan calistirmaliyiz
     Runner class'i testlerimizi tekli veya toplu olarak calistirmamizi saglar
     Runner class'i BOS bir class'dir
     burada asil isi yapan 2 tane notasyon
